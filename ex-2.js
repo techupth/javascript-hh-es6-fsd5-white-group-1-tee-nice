@@ -12,12 +12,9 @@ let studentScores = {
   tech: 100,
 };
 
-// Start coding here
+// Start coding here Merging Nested Array
 let newStudentProfile = {
   ...studentProfile,
-  scores: {
-    ...studentProfile.scores,
-    ...studentScores,
-  },
+  scores: { ...studentProfile.scores, ...studentScores },
 };
 console.log(newStudentProfile);
